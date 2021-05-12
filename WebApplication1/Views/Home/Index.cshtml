@@ -1,0 +1,33 @@
+﻿@{
+    List<string> names=ViewBag.names;
+}
+<table>
+    <thead class="header">Name:</thead>
+    @foreach (var a in names)
+    {
+    <tr class="column">
+        <td>
+            @a
+        </td> 
+    </tr>
+
+    }
+</table>
+
+
+<style>
+    .header {
+        background: red;
+        font-size:larger;
+        width: 100px;
+    }
+    .table {
+        display: flex;
+        flex-flow: column;
+    }
+    .column {
+    display:flex;
+    flex-flow: column;
+    background: red;
+    }
+</style>
